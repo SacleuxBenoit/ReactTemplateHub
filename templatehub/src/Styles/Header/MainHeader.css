@@ -54,7 +54,8 @@ List
 }
 
 .containerMainHeader a,
-.listMainHeader a {
+.mobileMenuOpen a,
+.menu a {
     color: rgba(254, 254, 254, 0.912);
     text-decoration: none;
 }
@@ -63,27 +64,55 @@ List
     display: none;
 }
 
+/* Header - NavBar */
 .svgBurgerMenu {
     height: 2rem;
     width: 2rem;
     margin-top: -.2rem;
 }
 
-.listMainHeader ul {
+.mobileMenuOpen ul,
+.menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    color: white;
     background-color: rgba(10, 32, 68, 0.907);
 }
 
-.listMainHeader ul li {
+.mobileMenuOpen ul li {
     padding: 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(201, 198, 198, 0.078);
+}
+
+.menu {
+    display: none;
+}
+
+.mobileMenuOpen {
+    display: block;
 }
 
 @media screen and (min-width: 768px) {
     .svgBurgerMenu {
         display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        padding: .7rem 0;
+        font-size: 1.2rem;
+    }
+
+    .menu ul li:hover {
+        color: rgb(183, 194, 186);
+    }
+
+    .searchBar {
+        display: block;
     }
 }
