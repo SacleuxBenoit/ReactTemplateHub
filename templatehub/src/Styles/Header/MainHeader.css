@@ -1,0 +1,89 @@
+/* .containerMainHeader {
+    display: flex;
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: rgba(10, 32, 68, 0.907);
+    color: rgba(254, 254, 254, 0.912);
+    border-bottom: 1px solid rgb(179, 199, 213);
+}
+
+.containerMainHeader input {
+    width: 100%;
+    margin: 0rem 1rem;
+    font-size: 1.2rem;
+}
+
+List
+.containerMainHeader ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerMainHeader li {
+    padding: 0rem 2rem;
+}
+
+.containerMainHeader a {
+    color: rgba(254, 254, 254, 0.912);
+    text-decoration: none;
+}
+
+.listMainHeader {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .containerMainHeader {
+        padding: 1.2rem 2rem;
+    }
+
+    .listMainHeader {
+        display: block;
+    }
+} */
+
+.containerMainHeader {
+    display: flex;
+    padding: 1.3rem;
+    background-color: rgba(10, 32, 68, 0.927);
+    color: rgba(254, 254, 254, 0.912);
+    justify-content: space-between;
+}
+
+.containerMainHeader a,
+.listMainHeader a {
+    color: rgba(254, 254, 254, 0.912);
+    text-decoration: none;
+}
+
+.searchBar {
+    display: none;
+}
+
+.svgBurgerMenu {
+    height: 2rem;
+    width: 2rem;
+    margin-top: -.2rem;
+}
+
+.listMainHeader ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: rgba(10, 32, 68, 0.907);
+}
+
+.listMainHeader ul li {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+    .svgBurgerMenu {
+        display: none;
+    }
+}
