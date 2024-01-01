@@ -45,6 +45,14 @@ List
     }
 } */
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .containerMainHeader {
     display: flex;
     padding: 1.3rem;
@@ -57,7 +65,6 @@ List
 .mobileMenuOpen a,
 .menu a {
     color: rgba(254, 254, 254, 0.912);
-    text-decoration: none;
 }
 
 .searchBar {
@@ -73,7 +80,6 @@ List
 
 .mobileMenuOpen ul,
 .menu ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: rgba(10, 32, 68, 0.907);
