@@ -14,9 +14,7 @@ function CHjournal() {
                             <path d="M20 17L4 17" stroke="#1C274C" strokeWidth="1.5" strokeLinecap="round"></path>
                         </g>
                     </svg> {/* Link that svg to navBarLeft*/}
-                    <div className='headerLeft'>
-                        Journal
-                    </div>
+                    <Link to="/"><h1>Journal</h1></Link>
 
                     <div className='headerRight'>
                         <Link to="/">
@@ -33,7 +31,7 @@ function CHjournal() {
                     </div>
                 </div>
             </header>
-            <div className='scrollCategories'>
+            <nav className='scrollCategories'>
                 <ul>
                     <li>à la une</li>
                     <li>En continu</li>
@@ -45,7 +43,7 @@ function CHjournal() {
                     <li>Culture</li>
                     <li>Etudiant</li>
                 </ul>
-            </div>
+            </nav>
         </>
     )
 }

@@ -4,6 +4,11 @@ header,
     border-bottom: 1px solid rgba(0, 0, 0, 0.254);
 }
 
+h1 {
+    font-size: 1rem;
+    color: black;
+}
+
 .connectionButton {
     display: none;
 }
@@ -64,9 +69,19 @@ header,
 
 /* Responsive */
 @media screen and (min-width:768px) {
+    h1 {
+        font-size: 1.2rem;
+        padding-left: 1.7rem;
+    }
+
     .scrollCategories ul {
         justify-content: center;
         text-align: center;
+        font-size: 1rem;
+    }
+
+    .scrollCategories ul li:hover {
+        color: rgb(50, 50, 245);
     }
 
     .scrollCategories ul li:nth-last-child(1) {
@@ -79,7 +94,10 @@ header,
         border: 1px solid black;
         border-radius: 0.5rem;
         color: black;
+    }
 
+    .connectionButton:hover {
+        border: 2px solid black;
     }
 
     .subscribeButton {
@@ -87,6 +105,10 @@ header,
         font-size: 1.1rem;
     }
 
+    .subscribeButton:hover {
+        background-color: rgb(250, 187, 69);
+        border: 1px solid black;
+    }
 
     .svgConnectionJournal {
         display: none;
