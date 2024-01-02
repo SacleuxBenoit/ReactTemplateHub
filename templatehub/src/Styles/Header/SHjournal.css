@@ -1,4 +1,5 @@
-header {
+header,
+.scrollCategories {
     border-bottom: 1px solid rgba(0, 0, 0, 0.254);
 }
 
@@ -14,10 +15,6 @@ header {
     height: 2rem;
     width: 2rem;
     margin-left: -1rem;
-}
-
-.headerLeft {
-    display: flex;
 }
 
 .headerRight {
@@ -37,4 +34,18 @@ header {
 .svgConnectionJournal {
     height: 1.4rem;
     width: 1.4rem;
+}
+
+.scrollCategories {
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.scrollCategories ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: .8rem;
+    white-space: nowrap;
 }
