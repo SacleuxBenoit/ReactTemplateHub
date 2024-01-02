@@ -27,8 +27,9 @@ function CHjournal() {
                                 <path d="M12,4A5,5,0,1,1,7,9a5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,12,2Z" transform="translate(0)"></path>
                                 <rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" fill="none" width="32" height="32"></rect>
                             </svg>
+                            <span className='connectionButton'>Se connecter</span>
                         </Link>
-                        <Link to="/">S'abonner</Link>
+                        <Link to="/"><span className='subscribeButton'>S'abonner</span></Link>
                     </div>
                 </div>
             </header>

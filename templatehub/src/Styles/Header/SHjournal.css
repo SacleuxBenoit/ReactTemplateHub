@@ -1,6 +1,11 @@
+/* Header */
 header,
 .scrollCategories {
     border-bottom: 1px solid rgba(0, 0, 0, 0.254);
+}
+
+.connectionButton {
+    display: none;
 }
 
 .journalContainer {
@@ -21,9 +26,11 @@ header,
     margin-left: auto;
 }
 
-.headerRight>a:nth-child(2) {
+.subscribeButton {
     background-color: orange;
     border-radius: 0.5rem;
+    padding: .2rem .4rem;
+    font-size: .8rem;
 }
 
 .headerRight a {
@@ -36,6 +43,7 @@ header,
     width: 1.4rem;
 }
 
+/* NavBar - scroll horizontally */
 .scrollCategories {
     overflow-y: auto;
     overflow-x: none;
@@ -48,4 +56,39 @@ header,
     margin: 0;
     font-size: .8rem;
     white-space: nowrap;
+}
+
+.scrollCategories ul li {
+    padding: 1rem;
+}
+
+/* Responsive */
+@media screen and (min-width:768px) {
+    .scrollCategories ul {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .scrollCategories ul li:nth-last-child(1) {
+        padding-right: 2rem;
+    }
+
+    .connectionButton {
+        padding: .2rem .4rem;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        color: black;
+
+    }
+
+    .subscribeButton {
+        padding: .2rem .4rem;
+        font-size: 1.1rem;
+    }
+
+
+    .svgConnectionJournal {
+        display: none;
+    }
 }
