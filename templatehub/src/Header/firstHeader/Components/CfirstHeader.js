@@ -1,6 +1,7 @@
-import '../../Styles/Header/SHjournal.css'
+import '../Styles/SfirstHeader.css'
 import { Link } from 'react-router-dom'
-function CHjournal() {
+
+function cfirstHeader() {
     return (
         <>
             <header>
@@ -48,4 +49,4 @@ function CHjournal() {
     )
 }
 
-export default CHjournal
+export default cfirstHeader
