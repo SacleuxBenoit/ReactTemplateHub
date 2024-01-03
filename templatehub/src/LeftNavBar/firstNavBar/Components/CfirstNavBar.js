@@ -1,6 +1,6 @@
-import '../../Styles/LeftNavBar/SLNBecommerce.css'
+import '../Styles/SfirstNavBar.css'
 import { Link } from "react-router-dom"
-function CLNBecommerce({ closeNavLeft }) {
+function CfirstNavBar({ closeNavLeft }) {
     return (
         <div className='wrapper'>
             <div className="containerNavLeft">
@@ -43,4 +43,4 @@ function CLNBecommerce({ closeNavLeft }) {
     )
 }
 
-export default CLNBecommerce
+export default CfirstNavBar

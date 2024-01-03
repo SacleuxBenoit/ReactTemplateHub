@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import('../../Styles/Header/MainHeader.css')
+import '../Styles/MainHeader.css'
 
 function MainHeader() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)

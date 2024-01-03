@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home/Home';
-import MainHeader from './Components/Header/MainHeader';
-import PLNBecommerce from './Pages/LeftNavBar/PLNBecommerce';
-import PHjournal from './Pages/Header/PHjournal';
+import Home from './Main/Pages/Home';
+import MainHeader from './Main/Components/MainHeader';
+import PfirstNavBar from './LeftNavBar/firstNavBar/Pages/PfirstNavBar';
+import PfirstHeader from './Header/firstHeader/Pages/PfirstHeader'
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
         <MainHeader />
         <Routes>
           <Route path="*" element={<Home />} />
-          <Route path="/PLNBecommerce" element={<PLNBecommerce />} />
-          <Route path="/PHjournal" element={<PHjournal />} />
+          <Route path="/firstNavBar" element={<PfirstNavBar />} />
+          <Route path="/firstHeader" element={<PfirstHeader />} />
         </Routes>
       </Router>
     </div>
