@@ -1,5 +1,6 @@
 # First card
 
-## Important 
+## Credit
 
-That component is only available for desktop version due to the animations
+foodPlate.png : photo taken by Julie Aagaard : 
+https://www.pexels.com/fr-fr/photo/salade-sur-une-assiette-2097090/

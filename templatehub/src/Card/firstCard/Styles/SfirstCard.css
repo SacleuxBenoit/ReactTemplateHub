@@ -1,4 +1,5 @@
 .containerCard {
+    position: absolute;
     display: flex;
     align-items: flex-end;
     border: 1px solid black;
@@ -28,6 +29,10 @@
 span,
 .orderNow a {
     color: black
+}
+
+.discount {
+    display: none;
 }
 
 /* Responsive version */
@@ -134,5 +139,15 @@ span,
 
     .containerCard:hover .orderNow {
         display: block;
+    }
+
+    .orderNow:hover+.discount {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 0;
+        width: 100%;
+        background-color: #86B971;
+        color: white;
     }
 }
