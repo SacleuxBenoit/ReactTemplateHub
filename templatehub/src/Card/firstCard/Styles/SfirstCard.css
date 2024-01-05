@@ -31,7 +31,7 @@ span,
 }
 
 /* Responsive version */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     .card {
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
@@ -40,7 +40,7 @@ span,
     .card h2 {
         display: block;
         font-size: 1.4rem;
-        margin-top: 2rem;
+        margin: 0rem 4rem;
     }
 
     .descriptionCard {
@@ -85,7 +85,7 @@ span,
 
 @media screen and (min-width:1024px) {
     .card {
-        padding: 1.2rem 0;
+        padding-top: .7rem;
         line-height: 1.5rem;
         font-size: .9rem;
         border-top-left-radius: 50%;
