@@ -1,0 +1,153 @@
+.containerCard {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid black;
+    background-image: url('../Images/foodPlate.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 10rem;
+    width: 40%;
+}
+
+.card {
+    text-align: center;
+    background-color: #86B971;
+    font-size: .7rem;
+    width: 100%;
+}
+
+.card h2 {
+    display: none;
+}
+
+.descriptionCard {
+    display: none;
+}
+
+span,
+.orderNow a {
+    color: black
+}
+
+.discount {
+    display: none;
+}
+
+/* Responsive version */
+@media screen and (min-width: 900px) {
+    .card {
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .card h2 {
+        display: block;
+        font-size: 1.4rem;
+        margin: 0rem 4rem;
+    }
+
+    .descriptionCard {
+        display: block;
+        font-size: .8rem;
+    }
+
+    .containerCard {
+        min-height: 20rem;
+        width: 30%;
+    }
+
+    .orderNow {
+        display: none;
+    }
+
+    span,
+    .orderNow a {
+        color: #2d7f0b;
+    }
+
+    /* Responsive - Hover */
+
+    .containerCard:hover {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .containerCard:hover .card {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        background-color: #DEE8C2;
+    }
+
+    .containerCard:hover .orderNow {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .card {
+        padding-top: .7rem;
+        line-height: 1.5rem;
+        font-size: .9rem;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+    .card h2 {
+        display: block;
+    }
+
+    .descriptionCard {
+        display: block;
+    }
+
+    .containerCard {
+        min-height: 20rem;
+        width: 30%;
+    }
+
+    .orderNow {
+        display: none;
+    }
+
+    span,
+    .orderNow a {
+        color: #2d7f0b;
+    }
+
+    /* Responsive - Hover */
+    .containerCard:hover h2 {
+        font-size: 1.4rem;
+    }
+
+    .containerCard:hover {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .containerCard:hover .card {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        background-color: #DEE8C2;
+    }
+
+    .containerCard:hover .orderNow {
+        display: block;
+    }
+
+    .orderNow:hover+.discount {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 0;
+        width: 100%;
+        background-color: #86B971;
+        color: white;
+    }
+}
